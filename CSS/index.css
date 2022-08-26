@@ -1,0 +1,53 @@
+/* Syntax */
+
+
+
+/* Selector {
+    property: value;
+} */
+
+/* CSS Application Methods */
+/* 1. External Method */
+/* 2. Style Tag */
+/* 3. Inline CSS */
+
+/* 1. Selector */
+
+/* 1. By Tag Name */
+/* 2. By ID */
+/* 3. By Class */
+/* 4. Parent-Child relationship */
+
+
+/* ===========  1. By Tag Name ============*/
+
+
+/* h1 { 
+    color: purple;
+    font-style: italic;
+ }
+
+ span {
+    color: green;
+ } */
+
+ 
+
+/*=================== 2. By ID ===================*/
+
+#first {
+    color: blue;
+}
+
+#second, .purple_class {
+    color: green;
+}
+
+
+#container div span {
+    color: purple;
+}
+
+
+
+

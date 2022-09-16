@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+        }
+        body {
+            color: white;
+            font-weight: 500;
+            text-align: center;
+            font-size: 24px;
+            padding: 10px;
+        }
+
+        .container div {
+            border-radius: 5px;
+        }
+
+        .container{
+            height: 100vh;
+            display: grid;
+            
+            grid-gap: 0.2rem;
+            
+
+            grid-template-columns:1fr 1fr 1fr 1fr;
+            
+            grid-template-rows:0.4fr 1.6fr 1.4fr 1fr;
+            
+            grid-template-areas: 
+            "navbar navbar navbar navbar"
+            "sidebar main main main"
+            "sidebar content1 content2 content3"
+            "sidebar footer footer footer";
+        }
+
+        .navbar {
+            background-color: #4C0033;
+            grid-area: navbar;
+        }
+
+        .sidebar {
+            background-color: #790252;
+            grid-area: sidebar;
+        }
+
+        .main {
+            background-color: #AF0171;
+            grid-area: main;
+        }
+
+        .content1 {
+            background-color: #821f5f;
+            grid-area: content1;
+        }
+        .content2 {
+            background-color: #e14fae;
+            grid-area: content2;
+        }
+        .content3 {
+            background-color: #8f4c78;
+            grid-area: content3;
+        }
+        
+        .footer {
+            background-color: #E80F88;
+            grid-area: footer;
+        }
+
+
+    </style>
+</head>
+<body>  
+    <div class="container">
+        <div class="navbar">navbar</div>
+        <div class="sidebar">sidebar</div>
+        <div class="main">main</div>
+        <div class="content1">content1</div>
+        <div class="content2">content2</div>
+        <div class="content3">content3</div>
+        <div class="footer">footer</div>
+    </div>
+</body>
+</html>
